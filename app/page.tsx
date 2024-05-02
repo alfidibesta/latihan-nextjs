@@ -11,7 +11,7 @@ export default function Home() {
             target="_blank"
             className="w-full bg-[tomato] text-white m-5 rounded-md p-2 hover:bg-blue-600"
           >
-            - latianssssz next js v1
+            - latianssssz next.js -v1
           </Link>
         </li>
         <li className="main-list">
