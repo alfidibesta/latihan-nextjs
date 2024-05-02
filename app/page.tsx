@@ -29,7 +29,16 @@ export default function Home() {
             target="_blank"
             className="w-full bg-[tomato] text-white m-5 rounded-md p-2 hover:bg-blue-600"
           >
-            - CV *build with astro 😁
+            - CV -v2 *build with astro 😁
+          </Link>
+        </li>
+        <li className="main-list">
+          <Link
+            href="https://alfidibesta.github.io/"
+            target="_blank"
+            className="w-full bg-[tomato] text-white m-5 rounded-md p-2 hover:bg-blue-600"
+          >
+            - CV -v1
           </Link>
         </li>
       </ul>
