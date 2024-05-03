@@ -1,47 +1,40 @@
 import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
+import { CircleArrowRight } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import dataList from "./data/dataList";
+
 
 export default function Home() {
   return (
-    <div className="main-page">
-      <h1 className="font-bold">HALAMAN UTAMA LATIAN :D</h1>
-      <ul className="mt-5">
-        <li className="main-list">
-          <Link
-            href="/latians"
-            target="_blank"
-            className="w-full bg-[tomato] text-white m-5 rounded-md p-2 hover:bg-blue-600"
-          >
-            - latianssssz next.js -v1
-          </Link>
-        </li>
-        <li className="main-list">
-          <Link
-            href="/linktrees"
-            target="_blank"
-            className="w-full bg-[tomato] text-white m-5 rounded-md p-2 hover:bg-blue-600"
-          >
-            - mau bikin linktree abal abal :)
-          </Link>
-        </li>
-        <li className="main-list">
-          <Link
-            href="https://alfidi.vercel.app/"
-            target="_blank"
-            className="w-full bg-[tomato] text-white m-5 rounded-md p-2 hover:bg-blue-600"
-          >
-            - CV -v2 *build with astro 😁
-          </Link>
-        </li>
-        <li className="main-list">
-          <Link
-            href="https://alfidibesta.github.io/"
-            target="_blank"
-            className="w-full bg-[tomato] text-white m-5 rounded-md p-2 hover:bg-blue-600"
-          >
-            - CV -v1
-          </Link>
-        </li>
-      </ul>
+    <div className="min-h-screen">
+      <div className="container max-w-[800px]">
+        <div className="py-5">
+          <h1 className="font-bold">LIST LATIAN BESTA :D</h1>
+          <Separator className="my-2" />
+          <div className="mt-5">
+            {dataList.map((data, index) => (
+              <Link
+                href={data.link}
+                target="_blank"
+                className="link"
+                key={index}
+              >
+                <Alert className="list-content">
+                  <CircleArrowRight
+                    size={16}
+                    strokeWidth={2.5}
+                    className="mr-4 circle-arrow"
+                  />
+                  <AlertTitle>{data.title}</AlertTitle>
+                  <AlertDescription>{data.desc}</AlertDescription>
+                </Alert>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

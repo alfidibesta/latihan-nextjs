@@ -1,5 +1,7 @@
 "use client";
 
+import { Button } from "../ui/button";
+
 //! menggunakan client side rendering 
 //? agar bisa menggunakan tool browser
 
@@ -13,9 +15,9 @@ const ViewUserButton: React.FC<ViewUserButtonProbs> = ({ email, id }) => {
   };
   return (
     <div className="p-2 m-5 w-full">
-      <button onClick={handleClick} className="rounded-sm p-2 bg-teal-400">
+      <Button onClick={handleClick}>
         Click DI SINI!
-      </button>
+      </Button>
     </div>
   );
 };

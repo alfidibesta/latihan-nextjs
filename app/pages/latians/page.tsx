@@ -1,5 +1,11 @@
-import CardList from "../components/latians/CardList";
-import ViewUserButton from "../components/latians/ViewUserButton";
+import { Metadata } from "next";
+import CardList from "../../../components/latians/CardList";
+import ViewUserButton from "../../../components/latians/ViewUserButton";
+
+export const metadata: Metadata = {
+    title: "Latian v1 | Besta Alfidi",
+    description: "Latian Nect.Js v1",
+  };
 
 const base_url = "https://jsonplaceholder.typicode.com/users";
 
