@@ -1,8 +1,14 @@
 const dataList = [
     {
-      title: "Latian Next.js v1",
+      title: "practice nextjs#2 - fullstack oauth prisma",
+      link: "https://besta-alfidi-blogr-nextjs-prisma.vercel.app/",
+      desc: "dari tutorial, ini nextjs + oauth github + prisma.io",
+      git: "https://github.com/alfidibesta/besta-blogr-nextjs-prisma",
+    },
+    {
+      title: "practice nextjs#1 - initial nextjs",
       link: "/pages/latians",
-      desc: "Belajar menggunakan Next.js v1",
+      desc: "Belajar menggunakan Next.js v14",
       git: "https://github.com/alfidibesta/latihan-nextjs",
     },
     {
